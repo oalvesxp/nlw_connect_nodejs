@@ -1,2 +1,2 @@
-# nlw_connect
-20ª Edição da Next Level Week, evento gratuito de programação da Rocketseat.
+# NLW Connect
+Trilha de NodeJS da 20ª edição da Next Level Week da Rocketseat.

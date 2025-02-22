@@ -2,6 +2,9 @@ POST http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
-  "name": "Jhon Doe",
-  "email": "jhon.doe@email.com"
+  "name": "Jane Doe",
+  "email": "jane.doe@email.com"
 }
+
+###
+GET http://localhost:3000/invites/bbafbcf2-e975-4486-babe-ac81e20b309a

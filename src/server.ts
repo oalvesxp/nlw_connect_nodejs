@@ -9,6 +9,7 @@ import {
   validatorCompiler,
 } from 'fastify-type-provider-zod'
 import { env } from './env'
+import { accessInviteLinkRoute } from './routes/access-invite-link-route'
 import { subscribeToEventRoute } from './routes/subscribe-to-event-route'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
@@ -40,6 +41,7 @@ app.get('/healthcheck', () => {
 })
 
 app.register(subscribeToEventRoute)
+app.register(accessInviteLinkRoute)
 
 app.listen({ port: env.PORT }).then(() => {
   console.log('🚀 HTTP server is running!', `http://127.0.0.1:${env.PORT}`)

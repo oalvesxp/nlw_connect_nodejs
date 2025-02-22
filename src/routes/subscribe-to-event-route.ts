@@ -29,7 +29,7 @@ export const subscribeToEventRoute: FastifyPluginAsyncZod = async app => {
         email,
       })
 
-      console.log('POST /subscribers', request.body)
+      console.log('POST 201 /subscribers', subscriberId)
       return reply.status(201).send({
         subscriberId,
       })

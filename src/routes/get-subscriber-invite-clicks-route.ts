@@ -24,6 +24,7 @@ export const getSubscriberInviteClicksRoute: FastifyPluginAsyncZod =
       async (request, _) => {
         const { subscriberId } = request.params
 
+        console.log(`POST 200 /subscribers/${subscriberId}/ranking/clicks`)
         const { count } = await getSubscriberInviteClicks({ subscriberId })
 
         return {

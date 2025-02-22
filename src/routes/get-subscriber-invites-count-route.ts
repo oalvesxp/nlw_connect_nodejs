@@ -24,6 +24,7 @@ export const getSubscriberInvitesCountRoute: FastifyPluginAsyncZod =
       async (request, _) => {
         const { subscriberId } = request.params
 
+        console.log(`POST 200 /subscribers/${subscriberId}/ranking/score`)
         const { count } = await getSubscriberInvitesCount({ subscriberId })
 
         return {

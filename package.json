@@ -4,7 +4,9 @@
   "description": "Evento de programação na prática da Faculdade Rocketseat",
   "main": "index.js",
   "scripts": {
-    "start:dev": "tsx watch src/server.ts"
+    "start:dev": "tsx watch src/server.ts",
+    "drizzle:generate": "npx drizzle-kit generate",
+    "drizzle:migrate": "npx drizzle-kit migrate"
   },
   "keywords": [],
   "author": "",

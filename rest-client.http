@@ -3,12 +3,16 @@ POST http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
-  "name": "Jane Doe",
-  "email": "jane.doe@email.com"
+  "name": "Jhon Armless",
+  "email": "jhon.armless@email.com",
+  "referrer": "5338e6cd-c010-4ba4-9b73-8ff82be3d4dd"
 }
 
 ### INVITE LINK ROUTE
-GET http://localhost:3000/invites/bbafbcf2-e975-4486-babe-ac81e20b309a
+GET http://localhost:3000/invites/5338e6cd-c010-4ba4-9b73-8ff82be3d4dd
 
 ### GET SUBSCRIBERS LINK COUNT
-GET http://localhost:3000/subscribers/bbafbcf2-e975-4486-babe-ac81e20b309a/ranking/clicks
+GET http://localhost:3000/subscribers/5338e6cd-c010-4ba4-9b73-8ff82be3d4dd/ranking/clicks
+
+### GET SUBSCRIBER INVITE COUNT
+GET http://localhost:3000/subscribers/5338e6cd-c010-4ba4-9b73-8ff82be3d4dd/ranking/score

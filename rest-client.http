@@ -1,3 +1,4 @@
+### SUBSCRIBE
 POST http://localhost:3000/subscribers
 Content-Type: application/json
 
@@ -6,8 +7,8 @@ Content-Type: application/json
   "email": "jane.doe@email.com"
 }
 
-###
+### INVITE LINK ROUTE
 GET http://localhost:3000/invites/bbafbcf2-e975-4486-babe-ac81e20b309a
 
-###
+### GET SUBSCRIBERS LINK COUNT
 GET http://localhost:3000/subscribers/bbafbcf2-e975-4486-babe-ac81e20b309a/ranking/clicks

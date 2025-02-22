@@ -3,7 +3,7 @@ import { fastifySwagger } from '@fastify/swagger'
 import { fastifySwaggerUi } from '@fastify/swagger-ui'
 import { fastify } from 'fastify'
 import {
-  ZodTypeProvider,
+  type ZodTypeProvider,
   jsonSchemaTransform,
   serializerCompiler,
   validatorCompiler,

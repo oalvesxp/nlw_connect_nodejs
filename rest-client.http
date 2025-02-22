@@ -3,9 +3,9 @@ POST http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
-  "name": "Jhon Headless",
-  "email": "jhon.headless@email.com",
-  "referrer": "5338e6cd-c010-4ba4-9b73-8ff82be3d4dd"
+  "name": "Jhon fingerless",
+  "email": "jhon.fingerless@email.com",
+  "referrer": "22745504-717f-48df-bd16-22de63bbfce2"
 }
 
 ### INVITE LINK ROUTE
@@ -19,3 +19,7 @@ GET http://localhost:3000/subscribers/5338e6cd-c010-4ba4-9b73-8ff82be3d4dd/ranki
 
 ### GET SUBSCRIBER RANKING POSITION
 GET http://localhost:3000/subscribers/5338e6cd-c010-4ba4-9b73-8ff82be3d4dd/ranking/position
+
+
+### GET RANKING
+GET http://localhost:3000/ranking

@@ -9,6 +9,7 @@ import {
 import { fastifySwagger } from '@fastify/swagger'
 import { fastifySwaggerUi } from '@fastify/swagger-ui'
 import { subscribeToEventRoute } from './routes/subscribe-to-event-route'
+import { env } from './env'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -40,6 +41,6 @@ app.get('/healthcheck', () => {
 
 app.register(subscribeToEventRoute)
 
-app.listen({ port: 3000 }).then(() => {
-  console.log('🚀 HTTP server is running!', 'http://127.0.0.1:3000')
+app.listen({ port: env.PORT }).then(() => {
+  console.log('🚀 HTTP server is running!', `http://127.0.0.1:${env.PORT}`)
 })

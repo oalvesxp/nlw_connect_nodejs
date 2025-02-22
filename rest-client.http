@@ -8,3 +8,6 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/invites/bbafbcf2-e975-4486-babe-ac81e20b309a
+
+###
+GET http://localhost:3000/subscribers/bbafbcf2-e975-4486-babe-ac81e20b309a/ranking/clicks

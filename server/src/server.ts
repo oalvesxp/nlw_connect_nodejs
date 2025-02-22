@@ -21,13 +21,20 @@ app.post('/subscribers', {
     body: z.object({
       name: z.string(),
       email: z.string().email()
-    })
+    }),
+    response: {
+      201: z.object({
+        name: z.string(),
+        email: z.string().email()
+      })
+    }
   }
-}, (request, reply) => {
+}, async (request, reply) => {
   const { name, email } = request.body
 
   // criação da inscrição no banco de dados
 
+  console.log('POST /subscribers', request.body)
   return reply.status(201).send({
     name,
     email
